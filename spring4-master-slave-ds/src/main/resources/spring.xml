@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <context:component-scan base-package="org.ywb.study"/>
+
+    <context:property-placeholder location="jdbc.properties"/>
+
+    <bean id="dataSourceBase" class="com.alibaba.druid.pool.DruidDataSource" destroy-method="close">
+        <property name="maxWait" value="60000" />
+        <property name="timeBetweenEvictionRunsMillis" value="60000" />
+        <property name="minEvictableIdleTimeMillis" value="300000" />
+        <property name="validationQuery" value="SELECT 'x'" />
+        <property name="testWhileIdle" value="true" />
+        <property name="testOnBorrow" value="false" />
+        <property name="testOnReturn" value="false" />
+        <property name="filters" value="stat" />
+    </bean>
+
+    <bean id="master" parent="dataSourceBase">
+        <property name="driverClassName" value="${db.driver}"/>
+        <property name="url" value="${master.db.url}"/>
+        <property name="username" value="${master.db.user}"/>
+        <property name="password" value="${master.db.pwd}"/>
+    </bean>
+
+    <bean id="slave0" parent="dataSourceBase">
+        <property name="driverClassName" value="${db.driver}"/>
+        <property name="url" value="${slave0.db.url}"/>
+        <property name="username" value="${slave0.db.user}"/>
+        <property name="password" value="${slave0.db.pwd}"/>
+    </bean>
+
+    <bean id="slave1" parent="dataSourceBase">
+        <property name="driverClassName" value="${db.driver}"/>
+        <property name="url" value="${slave1.db.url}"/>
+        <property name="username" value="${slave1.db.user}"/>
+        <property name="password" value="${slave1.db.pwd}"/>
+    </bean>
+
+    <bean id="slave2" parent="dataSourceBase">
+        <property name="driverClassName" value="${db.driver}"/>
+        <property name="url" value="${master.db.url}"/>
+        <property name="username" value="${master.db.user}"/>
+        <property name="password" value="${master.db.pwd}"/>
+    </bean>
+
+    <bean id="dataSource" class="org.ywb.study.dao.DataSourceSelector">
+        <property name="targetDataSources">
+            <map key-type="java.lang.String">
+                <entry key="master" value-ref="master"/>
+                <entry key="slave0" value-ref="slave0"/>
+                <entry key="slave1" value-ref="slave1"/>
+            </map>
+        </property>
+        <property name="defaultTargetDataSource" ref="master"/>
+        <property name="slaveSize" value="3"/>
+    </bean>
+
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="configLocation" value="mybatis.xml"/>
+        <property name="mapperLocations">
+            <list>
+                <value>org/ywb/study/dao/*.xml</value>
+            </list>
+        </property>
+        <property name="plugins">
+            <array>
+                <bean class="com.github.pagehelper.PageInterceptor">
+                    <property name="properties">
+                        <value>
+                            helperDialect=mysql
+                        </value>
+                    </property>
+                </bean>
+            </array>
+        </property>
+    </bean>
+
+    <!-- ********************************Mybatis的Mapper自动扫描****************************** -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="org.ywb.study.dao" />
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
+    </bean>
+
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <aop:aspectj-autoproxy expose-proxy="true"/>
+
+</beans>
