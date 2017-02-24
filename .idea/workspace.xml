@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="340b0921-d3b1-49aa-92d2-e54a4095a8b0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring4-master-slave-ds/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring4-master-slave-ds/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring4-master-slave-ds/src/main/java/org/ywb/study/User.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring4-master-slave-ds/src/main/java/org/ywb/study/annotation/DataSource.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring4-master-slave-ds/src/main/java/org/ywb/study/aop/DataSourceAspectj.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring4-master-slave-ds/src/main/java/org/ywb/study/dao/DataSourceHolder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring4-master-slave-ds/src/main/java/org/ywb/study/dao/DataSourceSelector.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring4-master-slave-ds/src/main/java/org/ywb/study/dao/TestMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring4-master-slave-ds/src/main/resources/jdbc.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring4-master-slave-ds/src/main/resources/log4j2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring4-master-slave-ds/src/main/resources/mybatis.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring4-master-slave-ds/src/main/resources/spring.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring4-master-slave-ds/src/test/java/org/ywb/study/AppTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring4-master-slave-ds/src/test/java/org/ywb/study/DaoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/spring4/target/" />
     <ignored path="$PROJECT_DIR$/spring4-master-slave-ds/target/" />
@@ -50,8 +35,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+            <state relative-caret-position="200">
+              <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -671,7 +656,7 @@
       <updated>1487753097446</updated>
       <workItem from="1487753100127" duration="20157000" />
       <workItem from="1487840037276" duration="7000" />
-      <workItem from="1487840371264" duration="19733000" />
+      <workItem from="1487840371264" duration="20746000" />
     </task>
     <servers />
   </component>
@@ -708,7 +693,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39897000" />
+    <option name="totallyTimeSpent" value="40910000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -1040,8 +1025,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        <state relative-caret-position="200">
+          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
           <folding />
         </state>
       </provider>
