@@ -27,7 +27,7 @@ public class DataSourceSelector extends AbstractRoutingDataSource {
         if (SLAVE.equals(context)) {
             if (slaveSize > 1) {
                 index = i.get() % slaveSize;
-                if (i.getAndIncrement() > slaveSize) {
+                if (i.incrementAndGet() >= slaveSize) {
                     i.set(0);
                 }
                 return SLAVE + index;

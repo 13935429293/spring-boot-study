@@ -1,7 +1,5 @@
 package org.ywb.study.dao;
 
-import javax.sql.DataSource;
-
 /**
  * User: yangwenbiao@passiontec.cn
  * Date: 2017/2/24
@@ -15,7 +13,7 @@ public class DataSourceHolder {
         return contextHolder.get();
     }
 
-    public static void setContext(String dataSource){
+    public static void setContext(String dataSource) {
         contextHolder.set(dataSource);
     }
 

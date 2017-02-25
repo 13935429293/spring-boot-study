@@ -21,12 +21,12 @@ public class DaoTest {
 
     @Test
     public void test(){
-        User user = new User();
-        user.setName("llll");
-        user.setPassword("111111111");
-        mapper.insert(user);
+        //User user = new User();
+        //user.setName("llll");
+        //user.setPassword("111111111");
+        //mapper.insert(user);
 
-        for (int i = 0; i < 100; i++){
+        for (int i = 0; i < 30; i++){
             System.out.println(mapper.getUser(2));
         }
     }
