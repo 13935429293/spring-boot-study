@@ -14,7 +14,7 @@ public class DataSourceSelector extends AbstractRoutingDataSource {
 
     private static final String MASTER = "master";
     private static final String SLAVE = "slave";
-    private int slaveSize;
+    private int slaveSize;// 从库数据源的个数，需要在spring.xml中进行调整
     private AtomicInteger i = new AtomicInteger(0);
 
     public void setSlaveSize(int slaveSize) {
