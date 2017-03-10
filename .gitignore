@@ -28,3 +28,4 @@ nbdist/
 # IntelliJ project files
 out
 gen
+/node_modules/
