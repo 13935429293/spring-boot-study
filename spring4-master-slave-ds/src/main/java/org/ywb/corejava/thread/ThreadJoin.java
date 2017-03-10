@@ -1,5 +1,7 @@
 package org.ywb.corejava.thread;
 
+import java.util.HashSet;
+
 /**
  * User: yangwenbiao@passiontec.cn
  * Date: 2017/3/10
@@ -15,6 +17,7 @@ public class ThreadJoin {
             prev = thread;
         }
         System.out.println(Thread.currentThread().getName() + " terminate.");
+
     }
 
     static class Domino implements Runnable{
