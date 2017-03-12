@@ -22,10 +22,3 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
-### Example user templates templates
-### Example user templates
-
-# IntelliJ project files
-out
-gen
-/node_modules/
