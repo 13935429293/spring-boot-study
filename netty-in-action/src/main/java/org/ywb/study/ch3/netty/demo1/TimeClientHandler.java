@@ -44,6 +44,8 @@ public class TimeClientHandler extends ChannelInboundHandlerAdapter {
         buf.readBytes(bytes);
         String body = new String(bytes, "UTF-8");
         System.out.println("Now is : " + body);
+        ((ByteBuf) msg).release();
+        ctx.close();
     }
 
     @Override
