@@ -8,7 +8,7 @@
     <artifactId>testNetty</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <packaging>war</packaging>
+    <packaging>pom</packaging>
 
     <dependencies>
         <dependency>
