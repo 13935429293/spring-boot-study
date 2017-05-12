@@ -3,7 +3,7 @@ package org.ywb.corejava.thread;
 import java.util.HashSet;
 
 /**
- * User: yangwenbiao@passiontec.cn
+ * User: yangwenbiao
  * Date: 2017/3/10
  * Time: 14:32
  */

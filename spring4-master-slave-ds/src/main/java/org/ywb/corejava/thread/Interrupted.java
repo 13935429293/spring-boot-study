@@ -3,7 +3,7 @@ package org.ywb.corejava.thread;
 import java.util.concurrent.TimeUnit;
 
 /**
- * User: yangwenbiao@passiontec.cn
+ * User: yangwenbiao
  * Date: 2017/3/8
  * Time: 18:51
  *

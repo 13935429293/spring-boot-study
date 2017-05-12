@@ -1,7 +1,7 @@
 package org.ywb.corejava.thread;
 
 /**
- * User: yangwenbiao@passiontec.cn
+ * User: yangwenbiao
  * Date: 2017/3/31
  * Time: 10:00
  * <p>

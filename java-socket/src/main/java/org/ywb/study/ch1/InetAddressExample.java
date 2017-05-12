@@ -4,7 +4,7 @@ import java.net.*;
 import java.util.Enumeration;
 
 /**
- * User: yangwenbiao@passiontec.cn
+ * User: yangwenbiao
  * Date: 2017/3/13
  * Time: 15:02
  */

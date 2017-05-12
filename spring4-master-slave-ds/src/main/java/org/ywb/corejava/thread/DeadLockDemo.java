@@ -3,7 +3,7 @@ package org.ywb.corejava.thread;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * User: yangwenbiao@passiontec.cn
+ * User: yangwenbiao
  * Date: 2017/3/7
  * Time: 16:12
  */

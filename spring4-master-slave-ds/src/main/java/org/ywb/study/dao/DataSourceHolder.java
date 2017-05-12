@@ -1,7 +1,7 @@
 package org.ywb.study.dao;
 
 /**
- * User: yangwenbiao@passiontec.cn
+ * User: yangwenbiao
  * Date: 2017/2/24
  * Time: 14:29
  */

@@ -3,7 +3,7 @@ package org.ywb.study.service;
 import org.ywb.study.entity.City;
 
 /**
- * User: yangwenbiao@passiontec.cn
+ * User: yangwenbiao
  * Date: 2017/3/17
  * Time: 13:42
  */

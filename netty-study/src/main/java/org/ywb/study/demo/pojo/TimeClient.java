@@ -12,7 +12,7 @@ import io.netty.channel.socket.nio.NioSocketChannel;
 import java.net.InetAddress;
 
 /**
- * User: yangwenbiao@passiontec.cn
+ * User: yangwenbiao
  * Date: 2017/4/5
  * Time: 10:23
  */

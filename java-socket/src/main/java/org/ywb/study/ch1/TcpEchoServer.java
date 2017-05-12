@@ -8,7 +8,7 @@ import java.net.Socket;
 import java.net.SocketAddress;
 
 /**
- * User: yangwenbiao@passiontec.cn
+ * User: yangwenbiao
  * Date: 2017/3/13
  * Time: 16:23
  * <p>

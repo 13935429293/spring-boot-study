@@ -7,7 +7,7 @@ import org.ywb.study.User;
 import org.ywb.study.annotation.DataSource;
 
 /**
- * User: yangwenbiao@passiontec.cn
+ * User: yangwenbiao
  * Date: 2017/2/24
  * Time: 15:27
  */

@@ -3,7 +3,7 @@ package org.ywb.study.demo.pojo;
 import java.util.Date;
 
 /**
- * User: yangwenbiao@passiontec.cn
+ * User: yangwenbiao
  * Date: 2017/4/1
  * Time: 17:48
  */

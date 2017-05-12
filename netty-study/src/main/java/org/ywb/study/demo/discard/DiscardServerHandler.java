@@ -9,7 +9,7 @@ import io.netty.util.ReferenceCountUtil;
 import java.nio.ByteBuffer;
 
 /**
- * User: yangwenbiao@passiontec.cn
+ * User: yangwenbiao
  * Date: 2017/3/31
  * Time: 18:28
  * <p>

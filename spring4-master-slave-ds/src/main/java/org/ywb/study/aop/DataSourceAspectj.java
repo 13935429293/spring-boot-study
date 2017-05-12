@@ -15,7 +15,7 @@ import java.lang.reflect.Method;
 import java.util.Objects;
 
 /**
- * User: yangwenbiao@passiontec.cn
+ * User: yangwenbiao
  * Date: 2017/2/24
  * Time: 15:12
  */

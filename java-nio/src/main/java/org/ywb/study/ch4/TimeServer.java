@@ -3,7 +3,7 @@ package org.ywb.study.ch4;
 import java.io.IOException;
 
 /**
- * User: yangwenbiao@passiontec.cn
+ * User: yangwenbiao
  * Date: 2017/3/27
  * Time: 18:38
  */

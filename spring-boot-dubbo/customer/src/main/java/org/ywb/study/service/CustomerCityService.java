@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import org.ywb.study.entity.City;
 
 /**
- * User: yangwenbiao@passiontec.cn
+ * User: yangwenbiao
  * Date: 2017/3/17
  * Time: 14:05
  */

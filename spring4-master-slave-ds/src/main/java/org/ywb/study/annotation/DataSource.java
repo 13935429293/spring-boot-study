@@ -3,7 +3,7 @@ package org.ywb.study.annotation;
 import java.lang.annotation.*;
 
 /**
- * User: yangwenbiao@passiontec.cn
+ * User: yangwenbiao
  * Date: 2017/2/24
  * Time: 14:13
  */

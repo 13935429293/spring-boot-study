@@ -6,7 +6,7 @@ import org.apache.zookeeper.CreateMode;
 import java.util.List;
 
 /**
- * User: yangwenbiao@passiontec.cn
+ * User: yangwenbiao
  * Date: 2017/2/25
  * Time: 15:39
  */

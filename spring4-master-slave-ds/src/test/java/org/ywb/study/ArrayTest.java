@@ -3,7 +3,7 @@ package org.ywb.study;
 import java.util.Scanner;
 
 /**
- * User: yangwenbiao@passiontec.cn
+ * User: yangwenbiao
  * Date: 2017/2/25
  * Time: 13:39
  * <p>

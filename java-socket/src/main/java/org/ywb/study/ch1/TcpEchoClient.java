@@ -7,7 +7,7 @@ import java.net.Socket;
 import java.net.SocketException;
 
 /**
- * User: yangwenbiao@passiontec.cn
+ * User: yangwenbiao
  * Date: 2017/3/13
  * Time: 15:22
  * <p>
