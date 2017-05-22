@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link th:href="@{bootstrap/ces/bootstrap.css}" rel="stylesheet">
+    <link th:href="@{bootstrap/css/bootstrap-theme.css}" rel="stylesheet">
+</head>
+<body>
+
+<ul>
+    <li th:each="person:${people}">
+        <span th:text="${person.name}"/>
+        <span th:text="${person.age}"/>
+    </li>
+</ul>
+</body>
+</html>
